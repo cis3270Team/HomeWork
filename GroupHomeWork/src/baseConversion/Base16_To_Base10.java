@@ -17,7 +17,7 @@ public class Base16_To_Base10 {
 		for (int i = 0; i < hexValue.length(); i++) {
 			if (hexValue.charAt(i) < '0' || hexValue.charAt(i) > 'F') {
 				System.out.println(hexValue.charAt(i) + " is an invalid input!");
-				System.exit(1);
+				return;
 			}
 		}
 
