@@ -1,0 +1,63 @@
+package baseConversion;
+
+import java.util.Scanner;
+
+public class CIS3270a {
+
+	public static void main(String[] args) {
+
+		// TODO Auto-generated method stub
+
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Enter a number");
+
+		int num = input.nextInt();
+
+		int numReuse = num;
+
+		int t = (num / 10);
+
+		int b = 0;
+
+		int c = 0;
+
+		while (num != 0) {
+
+			t--;
+
+			b = num % 2;
+
+			num /= 2;
+
+			System.out.print(b);
+
+			c++;
+
+		}
+
+		int[] arr = new int[c];
+
+		while (numReuse != 0) {
+
+			c--;
+
+			b = numReuse % 2;
+
+			numReuse /= 2;
+
+			arr[c] = b;
+
+		}
+
+		System.out.println();
+
+		for (int k = 0; k < arr.length; k++) {
+
+			System.out.print(arr[k]);
+
+		}
+
+	}
+
+}
